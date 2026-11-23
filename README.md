@@ -69,13 +69,13 @@ Using the BDHI
 
 1. DME window:  DME stands for "distance measuring equipment." This window tells how far the aircraft is from the selected TACAN station in nautical miles.
 2. Course window: This number mirrors the position of the course deviation card which is dialed in by the course selector knob.
-3. Compass card: The compass card show the current aircraft heading at the top and is used to reference the TACAN needle bearing and the selected course.
+3. Compass card: The compass card shows the current aircraft heading at the top and is used to reference the TACAN needle bearing and the selected course.
 4. TACAN needle (head): Points toward the selected TACAN station, i.e. shows the magnetic bearing to the selected TACAN station.
 5. Course deviation card: Set to a desired course by the course selector knob.  The two white dots on either side of the center of the card represent the amount of deviation from the selected course.  Moving outward from the center of the card, each dot represents 5 degrees of deviation.
 6. To/From flag: Indicates whether the current course is headed towards or away from the selected TACAN station.
-7. TACAN needle (tail): Can be thought of as representing the aircraft's location from the TACAN station.  In the above image, the aircraft would be said to be on the 115 bearing from the station.  This is also referred to as a "radial."  If the ship radios you for your position, a common phrasing might be "I'm on your 115 radial at 11 point 3 DME."
+7. TACAN needle (tail): Can be thought of as representing the aircraft's location from the TACAN station.  In the above image, the aircraft would be said to be on the 115 bearing from the station.  This is also referred to as a "radial."  If the ship radios you for your position, a common phrasing might be "I'm on your 115 radial at 11 point 3 DME" or shortened to "I'm on your 115 at 11 point 3."
 8. Course deviation indicator: A bar that slides left or right of center commensurate with the number of degrees off course you are.
-9. TACAN channel selector: Left or right clicking any of the four numbers will increment or decrement their values, thus changing the currently selected TACAN station.  If there are units with that channel in the simulation, then a red bar will appear over the DME window indicating no reception on that TACAN channel.
+9. TACAN channel selector: Left or right clicking any of the four numbers will increment or decrement their values, thus changing the currently selected TACAN station.  If there are no units with that channel in the simulation, then a red bar will appear over the DME window indicating no reception on that TACAN channel.
 10. Course selector knob: Using the mouse scroll wheel will increment or decrement the desire course accordingly.  The course deviation card will turn and point at the value shown in the course window.
 
     
