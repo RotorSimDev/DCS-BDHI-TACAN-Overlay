@@ -25,6 +25,10 @@ The BDHI Overlay recreates this navigation capability for aircraft and ships in 
 
 By calculating the aircraft's position relative to a designated navigation reference (i.e. ship), the overlay presents a simulated BDHI with a rotating compass card, bearing pointer, and distance readout. Additionally, the overlay contains a working course deviation indicator (**CDI**) that is adjusted by a rotating CRS knob.  There is also a TACAN control area where you can tune in to different TACAN stations.  This provides pilots with a familiar instrument for navigating to ships or other reference points without relying on the F10 map or external navigation aids.
 
+Up-Front Note
+-------------
+This overlay is designed to be used by ships and aircraft that don't have TACAN capability.  This BDHI will NOT lock in on the actual TACAN channel that is used by the carrier in the DCS Super Carrier addon.  Nor will aircraft like the F-18 that actually have a TACAN be able to lock in on the "signal" put out by the ships using this overlay - you'll see why in the "How It Works" section below.
+
 Installation
 ------------
 Download and extract the .zip file from this site.  Place the files/folders as described below into your Scripts folder located in your DCS Saved Games folder.  On a Windows machine, this is typically located at C:\Users\<WindowsUsername>\Saved Games\DCS\Scripts:
@@ -77,6 +81,56 @@ Using the BDHI
 8. Course deviation indicator: A bar that slides left or right of center commensurate with the number of degrees off course you are.
 9. TACAN channel selector: Left or right clicking any of the four numbers will increment or decrement their values, thus changing the currently selected TACAN station.  If there are no units with that channel in the simulation, then a red bar will appear over the DME window indicating no reception on that TACAN channel.
 10. Course selector knob: Using the mouse scroll wheel will increment or decrement the desire course accordingly.  The course deviation card will turn and point at the value shown in the course window.
+
+Sample Kiowa Mission
+--------------
+If you're not interested in editing or creating a mission from scratch, I've included a sample mission in the package's zip file called BeachAssault.miz.  You must have the Polychop OH-58D Kiowa in order to run this right out of the box, otherwise you could edit the mission and change to a different helicopter.  Generally, user-created missions like this are stored in the C:\Users\<WindowsUserName>\Saved Games\DCS\Missions\ directory.
+
+In this mission, you're tasked with cold starting your armed helo on the back of an Oliver Hazard Perry class frigate, attacking a single shore target vehicle about 5 miles away, and then returning to the frigate.  Labels are turned off, so you'll have to use the (very) simple intel provided in the brief.  This means you'll need to tune your TACAN to the correct channel as the default channel is not the one the ship is using.  Then you can use the bearing provided from the ship to get to the search area.  After you successfully engage the target, the TACAN will help you get within visual range of the ship so you can land.
+
+**Here's what this mission might look like...**
+
+After startup, you pull up the BDHI Overlay with CTRL-SHIFT-F12 and you get this:
+<img width="905" height="546" alt="init-error" src="https://github.com/user-attachments/assets/94b7b27d-2c0b-4441-ab0d-e07bbcff772f" />
+Notice the red bar through the DME window!  What did the brief say?  Oh yeah, 45X was the TACAN channel...
+
+<img width="792" height="511" alt="corrected" src="https://github.com/user-attachments/assets/6df65a0c-2b50-4d8f-bee7-896c2a2340b8" />
+
+Now the red bar is gone, the CDI has deflected and the yellow TACAN needle moved towards mom (i.e. your ship) a little bit.  You're good to go.  
+
+So you take off, dial your course to 120 (because that's what the intel said to do), and start centering up your CDI so you can begin searching the shoreline for the target.
+<img width="960" height="540" alt="Screen_261123_195128" src="https://github.com/user-attachments/assets/0bd78902-9b00-4ca4-bc49-05ec8eb57426" />
+
+Hopefully you find your target and engage it before you get too close...
+<img width="960" height="540" alt="Screen_261123_195403" src="https://github.com/user-attachments/assets/fb5c7bb0-718e-4bab-b002-9a0533ef9bab" />
+Rifle!  Splash one.  Time to RTB.
+<img width="960" height="540" alt="Screen_261123_195712" src="https://github.com/user-attachments/assets/62fb24f9-2d5a-42c4-b300-b742864cd52c" />
+That little dot is your home...
+<img width="960" height="540" alt="Screen_261123_195849" src="https://github.com/user-attachments/assets/0db89337-3695-4fb3-8382-590b534cfcd5" />
+Always feels good when you get closer...
+<img width="960" height="540" alt="Screen_261123_195916" src="https://github.com/user-attachments/assets/ef0a4733-e046-489c-bd3c-ad7ebb70a356" />
+Land now. Down, down, down.
+<img width="1920" height="1080" alt="Screen_261123_195950" src="https://github.com/user-attachments/assets/527affae-9e75-49e9-aacd-9238d1ebd79a" />
+In the trap, trapped.  Center light.  Ok, not this exact aircraft, but you get the idea.
+
+
+Download the package here
+-------------------------
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-blue)](../../releases/latest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
