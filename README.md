@@ -47,7 +47,7 @@ When the overlay loads or when the TACAN channel in the TCN CONTROL section is c
 
 Instructions
 ------------
-Since the overlay looks for ships with specific unit names containing the desired TACAN channel, you're going to have to open up the the DCS Mission Editor and either create a mission where you apply the appropriate unit name OR you can edit a mission that already exists and just changed the unit name of a ship that you'd like to fly to/from.
+Since the overlay looks for ships with specific unit names containing the desired TACAN channel, you're going to have to open up the the DCS Mission Editor and either create a mission where you apply the appropriate unit name OR you can edit a mission that already exists and just change the unit name of a ship that you'd like to fly to/from.
 
 As an example, we will take the first mission from YoYo's very excellent free Kiowa campaign, Through the Desert Dust (https://files.digitalcombatsimulator.com/en/files/3345522/), and edit the "unit name" of the LHA-class ship you start and end the mission on so that the BDHI Overlay will find a valid TACAN channel.
 1. Start DCS World
