@@ -43,11 +43,11 @@ The BDHIOverlay folder contains all of the logic and graphical elements for over
 
 How It Works
 ------------
-When the overlay loads or when the TACAN channel in the TCN CONTROL section is changed, the simulation environment is scanned for a unit named "Naval-*tacan_channel_X*" or "Naval-*tacan_channel_Y*", e.g. Naval-055X or Naval-121Y.  If there is a ship with the unit name whose suffix matches the value in the TCN CONTROL window on the overlay, then the aircraft's position and distance relative to that ship is calculated and displayed on the overlay.   
+When the overlay loads or when the TACAN channel in the TCN CONTROL section is changed, the simulation environment is scanned for a unit named "Naval-*nnnX/Y*" or "TACAN-*nnnX/Y"*, where nnnX/Y is the numeric channel of the station with the X or Y suffix.  This means your station needs to be named something like Naval-055X or TACAN-121Y.  If there is a ship, vehicle, or static DCS object (like a building or tower) with the unit name whose suffix matches the value in the TCN CONTROL window on the overlay, then the aircraft's position and distance relative to that ship/vehicle/object is calculated and displayed on the overlay.   
 
 Instructions
 ------------
-Since the overlay looks for ships with specific unit names containing the desired TACAN channel, you're going to have to open up the the DCS Mission Editor and either create a mission where you apply the appropriate unit name OR you can edit a mission that already exists and just change the unit name of a ship that you'd like to fly to/from.
+Since the overlay looks for objects with specific unit names containing the desired TACAN channel, you're going to have to open up the the DCS Mission Editor and either create a mission where you apply the appropriate unit name OR you can edit a mission that already exists and just change the unit name of a ship/vehicle/object that you'd like to fly to/from.
 
 As an example, we will take the first mission from YoYo's very excellent free Kiowa campaign, Through the Desert Dust (https://files.digitalcombatsimulator.com/en/files/3345522/), and edit the "unit name" of the LHA-class ship you start and end the mission on so that the BDHI Overlay will find a valid TACAN channel.
 1. Start DCS World
